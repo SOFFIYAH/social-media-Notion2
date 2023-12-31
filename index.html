@@ -3,17 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Social Media</title>
+	<title>Social Media 2</title>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<!-- 	<link rel="stylesheet" type="text/css" href="social.css"> -->
-  <style>* {
+	<style>
+		* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
 
 body{
-	background-color: rgb(255, 255, 255, 0%);
+	background-color: rgb(0, 0, 0, 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,9 +46,9 @@ body{
 
 .rad{
     padding: 5px;
-    margin-left: 440px;
+    margin-left: 380px;
     border-radius: 0px;
-    border:2px solid #443F3C;
+    border:2px solid #35CEC9;
     background: none;
     cursor: pointer;
 }
@@ -56,12 +56,19 @@ body{
     padding: 8px;
     margin-left: 10px;
     border-radius: 100px;
-    border:2px solid #443F3C;
+    border:2px solid #35CEC9;
     background: none;
     cursor: pointer;
 }
 
-
+a{
+    color:#35CEC9;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 8px;
+    padding-bottom: 0px;
+    position: absolute;
+}
 
 #tgi{
     background: #35CEC9;
@@ -83,8 +90,9 @@ body{
 }
 
 .fa-brands, .fa-solid{
-    color: #443F3C;
-    background: rgb(255, 255, 255, 0%);
+    color: #FFF7EC;
+    background-color:#35CEC9 ;
+    
     padding:10px;
     border-radius: 100px;
     font-size: 20px;
@@ -92,13 +100,15 @@ body{
 
 
 i:hover{
-    color: #FFF7EC;
-    background-color:#35CEC9 ;
+    background-color: rgb(255, 255, 255, 0%);
+    color: #35CEC9;
+    
     cursor: pointer;
+
 }
 
-</style>
-</head>
+
+	</style>
 <body>
 	<div class="main">
 <div class="toggle">
@@ -108,6 +118,7 @@ i:hover{
 	<button onclick="chnge(this.id)" class="tg" id="tgiv"></button>
 	<button onclick="shp(this.id)" class="rad" id="rad"></button>
 	<button onclick="sht(this.id)" class="rid" id="rid"></button>
+
 	</div>
 
 	<div class="wrap">
@@ -198,233 +209,335 @@ i:hover{
 
 	</div>
 
-	<script type="text/javascript" >
-    function chnge(id){
+	<script type="text/javascript">
+		function chnge(id){
 
 
-if(id=="tgii"){
-    document.getElementById("tgii").style.padding="15px"
-    document.getElementById("tgi").style.padding="8px"
-    document.getElementById("tgiii").style.padding="8px"
-    document.getElementById("tgiv").style.padding="8px"
+    if(id=="tgii"){
+        document.getElementById("tgii").style.padding="15px"
+        document.getElementById("tgi").style.padding="8px"
+        document.getElementById("tgiii").style.padding="8px"
+        document.getElementById("tgiv").style.padding="8px" 
+
+        document.getElementById("inst").style.backgroundColor="#443F3C"        
+        document.getElementById("inst").style.color="#FFF7EC" 
+        document.getElementById("yt").style.backgroundColor="#443F3C"        
+        document.getElementById("yt").style.color="#FFF7EC" 
+        document.getElementById("tt").style.backgroundColor="#443F3C"        
+        document.getElementById("tt").style.color="#FFF7EC" 
+        document.getElementById("txt").style.backgroundColor="#443F3C"        
+        document.getElementById("txt").style.color="#FFF7EC" 
+        document.getElementById("twt").style.backgroundColor="#443F3C"        
+        document.getElementById("twt").style.color="#FFF7EC" 
+        document.getElementById("pnt").style.backgroundColor="#443F3C"        
+        document.getElementById("pnt").style.color="#FFF7EC" 
+        document.getElementById("lik").style.backgroundColor="#443F3C"        
+        document.getElementById("lik").style.color="#FFF7EC" 
+        document.getElementById("rdt").style.backgroundColor="#443F3C"        
+        document.getElementById("rdt").style.color="#FFF7EC" 
+        document.getElementById("eml").style.backgroundColor="#443F3C"        
+        document.getElementById("eml").style.color="#FFF7EC" 
+        document.getElementById("fb").style.backgroundColor="#443F3C"        
+        document.getElementById("fb").style.color="#FFF7EC" 
+        document.getElementById("rid").style.borderColor="#FFF7EC" 
+        document.getElementById("rad").style.borderColor="#FFF7EC" 
+        document.getElementById("rod").style.color="#FFF7EC" 
+
+        let btn=document.querySelectorAll("i");
+       
+     
     
-    let btn=document.querySelectorAll("i");
- 
-
-   function blck(e){
-    let btn=e.target
-    btn.style.backgroundColor="#443F3C"
-    btn.style.color="#FFF7EC"
-}
-
-function blk(e){
-    let btn=e.target
-    btn.style.backgroundColor="rgb(255, 255, 255, 0%)"
-    btn.style.color="#443F3C"
-}
-
-
-btn.forEach(btn => {
-    btn.addEventListener("mouseover",blck)
+       function blk(e){
+        let btn=e.target
+        btn.style.backgroundColor="#443F3C"
+        btn.style.color="#FFF7EC"
+    }
     
-});
-
-btn.forEach(btn => {
-    btn.addEventListener("mouseout",blk)
+    function blck(e){
+        let btn=e.target
+        btn.style.backgroundColor="rgb(255, 255, 255, 0%)"
+        btn.style.color="#FFF7EC"
+    }
+   
     
-});
-
-
-}
-
- else if(id=="tgiii"){
-    document.getElementById("tgiii").style.padding="15px"
-    document.getElementById("tgii").style.padding="8px"
-    document.getElementById("tgi").style.padding="8px"
-    document.getElementById("tgiv").style.padding="8px"
-    let btn=document.querySelectorAll("i");
- 
-
-   function blck(e){
-    let btn=e.target
-    btn.style.backgroundColor="#B0F3D4"
-    btn.style.color="#FFF7EC"
-}
-
-function blk(e){
-    let btn=e.target
-    btn.style.backgroundColor="rgb(255, 255, 255, 0%)"
-    btn.style.color="#443F3C"
-}
-
-btn.forEach(btn => {
-    btn.addEventListener("mouseover",blck)
     
-});
-
-btn.forEach(btn => {
-    btn.addEventListener("mouseout",blk)
+    btn.forEach(btn => {
+        btn.addEventListener("mouseover",blck)
+        
+    });
     
-});
-
-}
-
-else if(id=="tgiv"){
-    document.getElementById("tgiii").style.padding="8px"
-    document.getElementById("tgii").style.padding="8px"
-    document.getElementById("tgi").style.padding="8px"
-    document.getElementById("tgiv").style.padding="15px"
-    let btn=document.querySelectorAll("i");
- 
-
-   function blck(e){
-    let btn=e.target
-    btn.style.backgroundColor="#FFE3B3"
-    btn.style.color="#FFF7EC"
-}
-
-function blk(e){
-    let btn=e.target
-    btn.style.backgroundColor="rgb(255, 255, 255, 0%)"
-    btn.style.color="#443F3C"
-}
-
-btn.forEach(btn => {
-    btn.addEventListener("mouseover",blck)
+    btn.forEach(btn => {
+        btn.addEventListener("mouseout",blk)
+        
+    });
     
-});
-
-btn.forEach(btn => {
-    btn.addEventListener("mouseout",blk)
     
-});
-
-}
-
-else if(id=="tgi"){
-    document.getElementById("tgiii").style.padding="8px"
-    document.getElementById("tgii").style.padding="8px"
-    document.getElementById("tgi").style.padding="15px"
-    document.getElementById("tgiv").style.padding="8px"
-    let btn=document.querySelectorAll("i");
- 
-
-   function blck(e){
-    let btn=e.target
-    btn.style.backgroundColor="#35CEC9"
-    btn.style.color="#FFF7EC"
-}
-
-function blk(e){
-    let btn=e.target
-    btn.style.backgroundColor="rgb(255, 255, 255, 0%)"
-    btn.style.color="#443F3C"
-}
-
-btn.forEach(btn => {
-    btn.addEventListener("mouseover",blck)
     
-});
-
-btn.forEach(btn => {
-    btn.addEventListener("mouseout",blk)
+    }
     
-});
+     else if(id=="tgiii"){
+        document.getElementById("tgiii").style.padding="15px"
+        document.getElementById("tgii").style.padding="8px"
+        document.getElementById("tgi").style.padding="8px"
+        document.getElementById("tgiv").style.padding="8px"
 
-}
+        document.getElementById("inst").style.backgroundColor="#B0F3D4"        
+        document.getElementById("inst").style.color="#FFF7EC" 
+        document.getElementById("yt").style.backgroundColor="#B0F3D4"        
+        document.getElementById("yt").style.color="#FFF7EC" 
+        document.getElementById("tt").style.backgroundColor="#B0F3D4"        
+        document.getElementById("tt").style.color="#FFF7EC" 
+        document.getElementById("txt").style.backgroundColor="#B0F3D4"        
+        document.getElementById("txt").style.color="#FFF7EC" 
+        document.getElementById("twt").style.backgroundColor="#B0F3D4"        
+        document.getElementById("twt").style.color="#FFF7EC" 
+        document.getElementById("pnt").style.backgroundColor="#B0F3D4"        
+        document.getElementById("pnt").style.color="#FFF7EC" 
+        document.getElementById("lik").style.backgroundColor="#B0F3D4"        
+        document.getElementById("lik").style.color="#FFF7EC" 
+        document.getElementById("rdt").style.backgroundColor="#B0F3D4"        
+        document.getElementById("rdt").style.color="#FFF7EC" 
+        document.getElementById("eml").style.backgroundColor="#B0F3D4"        
+        document.getElementById("eml").style.color="#FFF7EC" 
+        document.getElementById("fb").style.backgroundColor="#B0F3D4"        
+        document.getElementById("fb").style.color="#FFF7EC" 
+        document.getElementById("rid").style.borderColor="#B0F3D4" 
+        document.getElementById("rad").style.borderColor="#B0F3D4" 
+        document.getElementById("rod").style.color="#B0F3D4"
 
-}
+        let btn=document.querySelectorAll("i");
+     
+    
+       function blk(e){
+        let btn=e.target
+        btn.style.backgroundColor="#B0F3D4"
+        btn.style.color="#FFF7EC"
+    }
+    
+    function blck(e){
+        let btn=e.target
+        btn.style.backgroundColor="rgb(255, 255, 255, 0%)"
+        btn.style.color="#B0F3D4"
+    }
+    
+    btn.forEach(btn => {
+        btn.addEventListener("mouseover",blck)
+        
+    });
+    
+    btn.forEach(btn => {
+        btn.addEventListener("mouseout",blk)
+        
+    });
+    
+    }
+    
+    else if(id=="tgiv"){
+        document.getElementById("tgiii").style.padding="8px"
+        document.getElementById("tgii").style.padding="8px"
+        document.getElementById("tgi").style.padding="8px"
+        document.getElementById("tgiv").style.padding="15px"
 
-function shp(id){
-document.getElementById("rad").style.padding="8px"
-document.getElementById("rid").style.padding="5px"
-document.getElementById("fb").style.borderRadius="0px"
-document.getElementById("inst").style.borderRadius="0px"
-document.getElementById("yt").style.borderRadius="0px"
-document.getElementById("tt").style.borderRadius="0px"
-document.getElementById("txt").style.borderRadius="0px"
-document.getElementById("twt").style.borderRadius="0px"
-document.getElementById("pnt").style.borderRadius="0px"
-document.getElementById("lik").style.borderRadius="0px"
-document.getElementById("rdt").style.borderRadius="0px"
-document.getElementById("eml").style.borderRadius="0px"
+        document.getElementById("inst").style.backgroundColor="#FFE3B3"        
+        document.getElementById("inst").style.color="#FFF7EC" 
+        document.getElementById("yt").style.backgroundColor="#FFE3B3"        
+        document.getElementById("yt").style.color="#FFF7EC" 
+        document.getElementById("tt").style.backgroundColor="#FFE3B3"        
+        document.getElementById("tt").style.color="#FFF7EC" 
+        document.getElementById("txt").style.backgroundColor="#FFE3B3"        
+        document.getElementById("txt").style.color="#FFF7EC" 
+        document.getElementById("twt").style.backgroundColor="#FFE3B3"        
+        document.getElementById("twt").style.color="#FFF7EC" 
+        document.getElementById("pnt").style.backgroundColor="#FFE3B3"        
+        document.getElementById("pnt").style.color="#FFF7EC" 
+        document.getElementById("lik").style.backgroundColor="#FFE3B3"        
+        document.getElementById("lik").style.color="#FFF7EC" 
+        document.getElementById("rdt").style.backgroundColor="#FFE3B3"        
+        document.getElementById("rdt").style.color="#FFF7EC" 
+        document.getElementById("eml").style.backgroundColor="#FFE3B3"        
+        document.getElementById("eml").style.color="#FFF7EC" 
+        document.getElementById("fb").style.backgroundColor="#FFE3B3"        
+        document.getElementById("fb").style.color="#FFF7EC" 
+        document.getElementById("rid").style.borderColor="#FFE3B3" 
+        document.getElementById("rad").style.borderColor="#FFE3B3" 
+        document.getElementById("rod").style.color="#FFE3B3" 
 
+        let btn=document.querySelectorAll("i");
+     
+    
+       function blk(e){
+        let btn=e.target
+        btn.style.backgroundColor="#FFE3B3"
+        btn.style.color="#FFF7EC"
+    }
+    
+    function blck(e){
+        let btn=e.target
+        btn.style.backgroundColor="rgb(255, 255, 255, 0%)"
+        btn.style.color="#FFE3B3"
+    }
+    
+    btn.forEach(btn => {
+        btn.addEventListener("mouseover",blck)
+        
+    });
+    
+    btn.forEach(btn => {
+        btn.addEventListener("mouseout",blk)
+        
+    });
+    
+    }
+    
+    else if(id=="tgi"){
+        document.getElementById("tgiii").style.padding="8px"
+        document.getElementById("tgii").style.padding="8px"
+        document.getElementById("tgi").style.padding="15px"
+        document.getElementById("tgiv").style.padding="8px"
 
+        document.getElementById("inst").style.backgroundColor="#35CEC9"        
+        document.getElementById("inst").style.color="#FFF7EC" 
+        document.getElementById("yt").style.backgroundColor="#35CEC9"        
+        document.getElementById("yt").style.color="#FFF7EC" 
+        document.getElementById("tt").style.backgroundColor="#35CEC9"        
+        document.getElementById("tt").style.color="#FFF7EC" 
+        document.getElementById("txt").style.backgroundColor="#35CEC9"        
+        document.getElementById("txt").style.color="#FFF7EC" 
+        document.getElementById("twt").style.backgroundColor="#35CEC9"        
+        document.getElementById("twt").style.color="#FFF7EC" 
+        document.getElementById("pnt").style.backgroundColor="#35CEC9"        
+        document.getElementById("pnt").style.color="#FFF7EC" 
+        document.getElementById("lik").style.backgroundColor="#35CEC9"        
+        document.getElementById("lik").style.color="#FFF7EC" 
+        document.getElementById("rdt").style.backgroundColor="#35CEC9"        
+        document.getElementById("rdt").style.color="#FFF7EC" 
+        document.getElementById("eml").style.backgroundColor="#35CEC9"        
+        document.getElementById("eml").style.color="#FFF7EC" 
+        document.getElementById("fb").style.backgroundColor="#35CEC9"        
+        document.getElementById("fb").style.color="#FFF7EC"
+        document.getElementById("rid").style.borderColor="#35CEC9" 
+        document.getElementById("rad").style.borderColor="#35CEC9" 
+        document.getElementById("rod").style.color="#35CEC9" 
 
-
-}
-
-
-function sht(id){
-document.getElementById("rid").style.padding="8px"
-document.getElementById("rad").style.padding="5px"
-document.getElementById("fb").style.borderRadius="100px"
-document.getElementById("inst").style.borderRadius="100px"
-document.getElementById("yt").style.borderRadius="100px"
-document.getElementById("tt").style.borderRadius="100px"
-document.getElementById("txt").style.borderRadius="100px"
-document.getElementById("twt").style.borderRadius="100px"
-document.getElementById("pnt").style.borderRadius="100px"
-document.getElementById("lik").style.borderRadius="100px"
-document.getElementById("rdt").style.borderRadius="100px"
-document.getElementById("eml").style.borderRadius="100px"
-
-
-
-
-}
-
-function move(id){
-
-
-	if(id=="fb"){
-	console.log("test me")
-	window.open("link here")
-}
-
-
-else if(id=="inst"){
-	window.open("link here")
-}
-
-else if(id=="yt"){
-	window.open("link here")
-}
-
-else if(id=="tt"){
-	window.open("link here")
-}
-
-else if(id=="txt"){
-	window.open("link here")
-}
-
-else if(id=="twt"){
-	window.open("link here")
-}
-
-else if(id=="pnt"){
-	window.open("link here")
-}
-
-else if(id=="lik"){
-	window.open("link here")
-}
-
-else if(id=="rdt"){
-	window.open("link here")
-}
-
-else if(id=="eml"){
-	window.open("link here")
-}
-
-
-
-}
-
-
-  </script>
+        let btn=document.querySelectorAll("i");
+     
+    
+       function blk(e){
+        let btn=e.target
+        btn.style.backgroundColor="#35CEC9"
+        btn.style.color="#FFF7EC"
+    }
+    
+    function blck(e){
+        let btn=e.target
+        btn.style.backgroundColor="rgb(255, 255, 255, 0%)"
+        btn.style.color="#FFF7EC"
+    }
+    
+    btn.forEach(btn => {
+        btn.addEventListener("mouseover",blck)
+        
+    });
+    
+    btn.forEach(btn => {
+        btn.addEventListener("mouseout",blk)
+        
+    });
+    
+    }
+    
+    }
+    
+    function shp(id){
+    document.getElementById("rad").style.padding="8px"
+    document.getElementById("rid").style.padding="5px"
+    document.getElementById("fb").style.borderRadius="0px"
+    document.getElementById("inst").style.borderRadius="0px"
+    document.getElementById("yt").style.borderRadius="0px"
+    document.getElementById("tt").style.borderRadius="0px"
+    document.getElementById("txt").style.borderRadius="0px"
+    document.getElementById("twt").style.borderRadius="0px"
+    document.getElementById("pnt").style.borderRadius="0px"
+    document.getElementById("lik").style.borderRadius="0px"
+    document.getElementById("rdt").style.borderRadius="0px"
+    document.getElementById("eml").style.borderRadius="0px"
+    
+    
+    
+    
+    }
+    
+    
+    function sht(id){
+    document.getElementById("rid").style.padding="8px"
+    document.getElementById("rad").style.padding="5px"
+    document.getElementById("fb").style.borderRadius="100px"
+    document.getElementById("inst").style.borderRadius="100px"
+    document.getElementById("yt").style.borderRadius="100px"
+    document.getElementById("tt").style.borderRadius="100px"
+    document.getElementById("txt").style.borderRadius="100px"
+    document.getElementById("twt").style.borderRadius="100px"
+    document.getElementById("pnt").style.borderRadius="100px"
+    document.getElementById("lik").style.borderRadius="100px"
+    document.getElementById("rdt").style.borderRadius="100px"
+    document.getElementById("eml").style.borderRadius="100px"
+    
+    
+    
+    
+    }
+    
+    function move(id){
+    
+    
+        if(id=="fb"){
+        console.log("test me")
+        window.open("link here").focus()
+    }
+    
+    
+    else if(id=="inst"){
+        window.open("link here").focus()
+    }
+    
+    else if(id=="yt"){
+        window.open("link here").focus()
+    }
+    
+    else if(id=="tt"){
+        window.open("link here").focus()
+    }
+    
+    else if(id=="txt"){
+        window.open("link here").focus()
+    }
+    
+    else if(id=="twt"){
+        window.open("link here").focus()
+    }
+    
+    else if(id=="pnt"){
+        window.open("link here").focus()
+    }
+    
+    else if(id=="lik"){
+        window.open("link here").focus()
+    }
+    
+    else if(id=="rdt"){
+        window.open("link here").focus()
+    }
+    
+    else if(id=="eml"){
+        window.open("link here").focus()
+    }
+    
+    
+    
+    }
+    
+    
+	</script>
 </div>
 </body>
 </html>
